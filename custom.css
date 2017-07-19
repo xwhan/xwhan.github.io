@@ -3,45 +3,37 @@
 html {
   position: relative;
   min-height: 100%;
+  left: 50px;
+  right: 80px
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 
 }
-.footer {
+body > .footer {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-   /*Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+  bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
 }
 
-
 img {
-    max-width: 140px;
+    max-width: 150px;
     max-height: auto;
 }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
+.navbar-brand {
+   padding-left: 50px;
+}
 body > .container {
-  padding: 100px 10px 10px;
+  padding-top: 100px;
 }
 .container .text-muted {
   margin: 20px 0;
 }
 
-/*.footer > .container {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-*/
+
 code {
-  font-size: 70%;
+  font-size: 80%;
 }
