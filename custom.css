@@ -7,7 +7,7 @@ html {
   right: 80px
 }
 body {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 body > .footer {
   position: absolute;
