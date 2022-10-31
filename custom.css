@@ -50,7 +50,10 @@ div.new {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }*/
 
-
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
 
 
 code {
