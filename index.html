@@ -18,11 +18,20 @@
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="dist/css/fontawesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <link href="custom.css" rel="stylesheet">
+  <link href="dist/css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="dist/css/brands.css">
-
-  <link rel="stylesheet" href=timeline.css>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#night-mode-toggle').click(function() {
+        console.log('Toggle switch clicked!');
+        $('body').toggleClass('night-mode');
+      });
+    });
+  </script>
+  <!-- <link rel="stylesheet" href=timeline.css> -->
 </head>
 
 <body>
@@ -32,15 +41,13 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <!-- <span class="sr-only">Toggle navigation</span> -->
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+
+        <a class="navbar-brand" style="font-size: 22px;">Wenhan Xiong</a>
+
+        <button id="night-mode-toggle">
+          <i id="night-mode-icon" class="fas fa-moon"></i>
         </button>
-        <a class="navbar-brand">Wenhan Xiong<span
-            style="font-family:Arial, Helvetica, sans-serif; font-size:18pt"></span></a>
+
       </div>
     </div>
   </nav>
@@ -52,24 +59,27 @@
 
       
       <div class="row">
-        <div class="col-md-12 text-left">
+        <div class="col-md-14 text-left">
 
-          <img src="imgs/my_photo.jpg" alt="Wenhan" style="float:left;margin-right:20px;margin-top:-50px;">
+          <img src="imgs/my_photo.jpg" alt="Wenhan" style="float:left;margin-right:20px;margin-top:-45px;">
 
-          <p>I am a research scientist at <a href="https://ai.facebook.com">Meta AI</a>, working on natural language
-            understanding and deep learning. I am passionate about building open-domain language processing systems that
+          <p><span style="font-size: 20px;">👋</span> I am a research scientist at <a href="https://ai.facebook.com">Meta AI</a>, working on natural language processing and deep learning. I have worked on a variety of NLP tasks, including information extraction (knowledge graphs), open-domain QA, retrieval and summarization. I am recently interested in building large language models that can handle long text sequences.
+            
+            <!-- I am passionate about building open-domain language processing systems that
             are capable of
             <a href="https://arxiv.org/abs/2005.00038"><strong>searching</strong></a>, <a
               href="https://arxiv.org/abs/1912.09637"><strong>encoding</strong></a> and <a
-              href="https://arxiv.org/abs/1707.06690"><strong>reasoning with</strong></a> information from the web.
+              href="https://arxiv.org/abs/1707.06690"><strong>reasoning with</strong></a> information from the web. -->
             <br>
             <br>
             Prior to Meta, I got my Ph.D. from <a href="https://www.ucsb.edu">University of California, Santa
               Barbara</a>
             in March, 2021 and my bachelor degree from University of Science and Technology of China in 2016.
-
           </p>
 
+
+          <div class="col-xs-3 text-left">
+          </div>
 
           <div class="col-xs-1 text-left">
             <a href="https://github.com/xwhan"><i class="fab fa-github-square"
@@ -84,7 +94,7 @@
                 style="font-size:19px"></i></a>
           </div>
 
-          <div class="col-xs-5 text-left">
+          <div class="col-xs-6 text-left">
             <a href="docs/wenhan.pdf"><strong>[Resume]</strong></a>&nbsp;&nbsp; <b>Email:</b>
             <tt>&#120;&#119;&#104;&#097;&#110;&#046;&#099;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</tt>
           </div>
