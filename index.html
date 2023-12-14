@@ -25,10 +25,15 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     $(document).ready(function() {
+
+      $('body').addClass('night-mode');
+
       $('#night-mode-toggle').click(function() {
         console.log('Toggle switch clicked!');
+        // Toggle the 'night-mode' class on click
         $('body').toggleClass('night-mode');
       });
+
     });
   </script>
   <!-- <link rel="stylesheet" href=timeline.css> -->
@@ -61,20 +66,15 @@
       <div class="row">
         <div class="col-md-14 text-left">
 
-          <img src="imgs/my_photo.jpg" alt="Wenhan" style="float:left;margin-right:20px;margin-top:-45px;">
+          <img src="imgs/my_photo.jpg" alt="Wenhan" style="float:left;margin-right:20px;margin-top:-10px;margin-bottom:45px;">
 
-          <p><span style="font-size: 20px;">👋</span> I am a research scientist at <a href="https://ai.facebook.com">Meta AI</a>, working on natural language processing and deep learning. I have worked on a variety of NLP tasks, including information extraction (knowledge graphs), open-domain QA, retrieval and summarization. I am recently interested in building large language models that can handle long text sequences.
+          <h3>About Me</h3>
+          <p> I am a research scientist at the Gen AI team of Meta. My day-to-day work aims at building  open LLMs with leading performance. Before joining Meta, I received my PhD in NLP from <a href="https://www.ucsb.edu">University of California, Santa Barbara</a> and my bachelor degree from <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>.
             
-            <!-- I am passionate about building open-domain language processing systems that
-            are capable of
-            <a href="https://arxiv.org/abs/2005.00038"><strong>searching</strong></a>, <a
-              href="https://arxiv.org/abs/1912.09637"><strong>encoding</strong></a> and <a
-              href="https://arxiv.org/abs/1707.06690"><strong>reasoning with</strong></a> information from the web. -->
-            <br>
-            <br>
-            Prior to Meta, I got my Ph.D. from <a href="https://www.ucsb.edu">University of California, Santa
-              Barbara</a>
-            in March, 2021 and my bachelor degree from University of Science and Technology of China in 2016.
+          <br>
+          <br>
+          My recent research interests lie primarily in long-context LLMs targeting tasks that necessitate dense information flow and highly skilled expertise. This line of work typically involves meticulous data recipes, efficient parallel training framework, hardware-aware model architecture designs that go beyond theoretical speedups and dedicated alignment methods. Please do not hessitate to reach out if you are also interested in these topics! 
+
           </p>
 
 
@@ -95,7 +95,8 @@
           </div>
 
           <div class="col-xs-6 text-left">
-            <a href="docs/wenhan.pdf"><strong>[Resume]</strong></a>&nbsp;&nbsp; <b>Email:</b>
+            <!-- <a href="docs/wenhan.pdf"><strong>[Resume]</strong></a>&nbsp;&nbsp;  -->
+            <b>Contact:</b>
             <tt>&#120;&#119;&#104;&#097;&#110;&#046;&#099;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</tt>
           </div>
 
@@ -103,42 +104,56 @@
       </div>
 
       <div class="row">
-        <hr>
-        <h3>Publications</h3>
 
-        (Full publication list at <a href="https://www.semanticscholar.org/author/Wenhan-Xiong/22253126"
-          target="_blank">Semantic Scholar</a> or <a href="https://scholar.google.com/citations?user=J9_LwQUAAAAJ&hl=en"
+
+        <hr>
+        <h3>Selected Publications</h3>
+
+        (Full publication list at <a href="https://scholar.google.com/citations?user=J9_LwQUAAAAJ&hl=en"
           target="_blank">Google Scholar</a>)
 
 
-        <h4>2022</h4>
+        <!-- <h4>2022</h4> -->
 
         <ul>
+
+          <p>
+            <li><strong>Effective Long-Context Scaling of Foundation Models</strong> <br />
+              <u>Wenhan Xiong</u>†, Jingyu Liu†, Igor Molybog, Hejia Zhang, Prajjwal Bhargava, Rui Hou, Louis Martin, Rashi Rungta, Karthik Abinav Sankararaman, Barlas Oguz, Madian Khabsa, Han Fang, Yashar Mehdad, Sharan Narang, Kshitiz Malik, Angela Fan, Shruti Bhosale, Sergey Edunov, Mike Lewis, Sinong Wang, Hao Ma<br />
+              <i>Arxiv, 2023</i>, <a href="https://arxiv.org/pdf/2309.16039.pdf">[pdf]</a> 
+          </p>
+          
+
+          <p>
+            <li><strong>Code Llama: Open Foundation Models for Code</strong> <br />
+              Baptiste Rozière†, Jonas Gehring†, Fabian Gloeckle†, Sten Sootla†, Itai Gat, Xiaoqing Ellen Tan, Yossi Adi⋄, Jingyu Liu, Tal Remez, Jérémy Rapin, Artyom Kozhevnikov, Ivan Evtimov, Joanna Bitton, Manish Bhatt, Cristian Canton Ferrer, Aaron Grattafiori, <u>Wenhan Xiong</u>, Alexandre Défossez, Jade Copet, Faisal Azhar, Hugo Touvron, Louis Martin, Nicolas Usunier, Thomas Scialom, Gabriel Synnaeve†<br />
+              <i>Arxiv, 2023</i>, <a href="https://arxiv.org/pdf/2308.12950.pdf">[pdf]</a> <a href="https://github.com/facebookresearch/codellama">[code]</a>
+          </p>
           
         
           <p>
             <li><strong>Adapting Pretrained Text-to-Text Models for Long Text Sequences</strong> <br /> <u>Wenhan
                 Xiong</u>, Anchit Gupta, Shubham Toshniwal, Yashar Mehdad, Wen-tau Yih<br />
-              <i>Arxiv Preprint</i>, <a href="https://arxiv.org/abs/2209.10052">[pdf] </a><a href="https://github.com/facebookresearch/bart_ls">[code]</a>
+              <i>EMNLP 2023, Findings</i>, <a href="https://arxiv.org/abs/2209.10052">[pdf] </a><a href="https://github.com/facebookresearch/bart_ls">[code]</a>
           <p>
 
-          <p>
+          <!-- <p>
             <li><strong>Bridging the Training-Inference Gap for Dense Phrase Retrieval</strong> <br /> 
               Gyuwan Kim, Jinhyuk Lee, Barlas Oguz, <u>Wenhan Xiong</u>, Yizhe Zhang, Yashar Mehdad, William Yang Wang<br />
               <em>EMNLP 2022 Findings</em>, <a href="https://arxiv.org/pdf/2210.13678.pdf">[pdf]</a>
-          <p>
+          <p> -->
 
-          <p>
+          <!-- <p>
             <li><strong>Scrolls: Standardized comparison over long language sequences</strong> <br /> 
               Uri Shaham, Elad Segal, Maor Ivgi, Avia Efrat, Ori Yoran, Adi Haviv, Ankit Gupta, <u>Wenhan Xiong</u>, Mor Geva, Jonathan Berant, Omer Levy <br />
               <em>EMNLP 2022</em>, <a href="https://arxiv.org/pdf/2201.03533">[pdf]</a>
-          <p>
+          <p> -->
             
-          <p>
+          <!-- <p>
             <li><strong>Boosted Dense Retriever</strong> <br /> 
               Patrick Lewis, Barlas Oğuz, <u>Wenhan Xiong</u>, Fabio Petroni, Wen-tau Yih, Sebastian Riedel <br />
              <em>NAACL 2022</em>, <a href="https://arxiv.org/pdf/2112.07771">[pdf]</a>
-          <p>
+          <p> -->
 
           <p>
             <li><strong>Simple Local Attentions Remain Competitive for Long-Context Tasks</strong> <br /> <u>Wenhan
@@ -149,17 +164,17 @@
 
       </ul>
 
-      <h4>2021</h4>
+      <!-- <h4>2021</h4> -->
 
       <ul>
-          
+<!--           
           <p>
             <li><strong>Open-domain question-answering for COVID-19 and other emergent domains</strong> <br /> Sharon Levy, Kevin Mo, <u>Wenhan Xiong</u>, William Yang Wang<br />
               <em>EMNLP 2021 Demo</em> , <a href="https://arxiv.org/pdf/2110.06962.pdf">[pdf]</a>
-          </p>
+          </p> -->
 
         
-          <p>
+          <!-- <p>
             <li><strong>Zero-shot Fact Verification by Claim Generation</strong> <br /> Liangming Pan, Wenhu Chen, <u>Wenhan Xiong</u>, Min-Yen Kan, William Yang Wang<br />
               <em>ACL-IJCNLP 2021</em>, <a href="https://arxiv.org/abs/2105.14682">[pdf]</a>
           </p>
@@ -167,13 +182,13 @@
           <p>
             <li><strong>Unsupervised multi-hop question answering by question generation</strong> <br /> Liangming Pan, Wenhu Chen, <u>Wenhan Xiong</u>, Min-Yen Kan, William Yang Wang<br />
              <em>NAACL 2021</em>, <a href="https://arxiv.org/pdf/2010.12623">[pdf]</a>
-          </p>
+          </p> -->
 
 
-          <p>
+          <!-- <p>
             <li><strong>"Progressively pretrained dense corpus index for open-domain question answering"</strong> <br /> <u>Wenhan Xiong</u>, Hong Wang, William Yang Wang<br />
             <em>EACL 2021</em> , <a href="https://arxiv.org/pdf/2005.00038">[pdf]</a>
-          </p>
+          </p> -->
 
           <p>
             <li><strong>Answering Complex Open-Domain Questions with Multi-Hop Dense Retrieval</strong> <br />
@@ -185,14 +200,14 @@
 
       </ul>
 
-      <h4>2020 and before</h4>
+      <!-- <h4>2020 and before</h4> -->
       <ul>
 
-          <p>
+          <!-- <p>
             <li><strong>Hybridqa: A dataset of multi-hop question answering over tabular and textual data</strong> <br />
               Wenhu Chen, Hanwen Zha, Zhiyu Chen, <u>Wenhan Xiong</u>, Hong Wang, William Wang<br />
               <em>EMNLP 2020 Findings</em>, <a href="https://arxiv.org/pdf/2004.07347">[pdf]</a>
-          </p>
+          </p> -->
 
           <p>
             <li><strong>Pretrained Encyclopedia: Weakly Supervised Knowledge-Pretrained Language Model</strong> <br />
@@ -200,14 +215,14 @@
               <em>ICLR 2020</em>, <a href="https://openreview.net/forum?id=BJlzm64tDH">[pdf]</a>
           </p>
         
-          <p>
+          <!-- <p>
             <li><strong>Improving Question Answering over Incomplete KBs with Knowledge-Aware Reader</strong> <br />
               <u>Wenhan Xiong</u>, Mo Yu, Shiyu Chang, Xiaoxiao Guo and William Yang Wang <br />
               <em>ACL 2019</em>, short oral PDF. <a href="https://github.com/xwhan/Knowledge-Aware-Reader">[code] <a
                   href="https://arxiv.org/pdf/1905.07098.pdf">[pdf]</a>
-          </p>
+          </p> -->
 
-          <p>
+          <!-- <p>
             <li><strong>TWEETQA: A Social Media Focused Question Answering Dataset</strong> <br />
               <u>Wenhan Xiong</u>, Jiawei Wu, Vivek Kulkarni, Mo Yu, Shiyu Chang, Xiaoxiao Guo and William Yang Wang <br />
               <em>ACL 2019</em>. <a
@@ -233,15 +248,15 @@
               Hong Wang, <u>Wenhan Xiong</u>, Mo Yu, Xiaoxiao Guo, Shiyu Chang and William Yang Wang <br />
               <em>NAACL 2019</em>. <a
                   href="https://aclanthology.org/N19-1086.pdf">[pdf]</a>
-          </p>
+          </p> -->
 
-          <p>
+          <!-- <p>
             <li><strong>Variational Knowledge Graph Reasoning</strong> <br /> Wenhu Chen, <u>Wenhan Xiong</u>, Xifeng Yan and William Yang Wang <br />
               <em>NAACL 2018</em>. <a
                   href="https://aclanthology.org/N18-1165.pdf">[pdf]</a>
-          </p>
+          </p> -->
 
-          <p>
+          <!-- <p>
             <li><strong>One-Shot Relational Learning for Knowledge Graphs</strong> <br /> <u>Wenhan Xiong</u>, Mo Yu, Shiyu
               Chang, Xiaoxiao Guo and William Yang Wang <br />
               <em>EMNLP 2018</em>. <a href="https://github.com/xwhan/One-shot-Relational-Learning">[code] <a
@@ -252,7 +267,7 @@
             <li><strong>Look before you leap: Bridging model-free and model-based reinforcement learning for planned-ahead vision-and-language navigation</strong> <br /> Xin Wang<sup>*</sup>, <u>Wenhan Xiong</u><sup>*</sup>, Hongmin Wang and William Yang Wang <br />
               <em>ECCV 2018</em>.  <a
                   href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Xin_Wang_Look_Before_You_ECCV_2018_paper.pdf">[pdf]</a>
-          </p>
+          </p> -->
 
           <p>
             <li><strong>"DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning"</strong>
@@ -266,7 +281,23 @@
 
       </div>
 
-      <!-- </div> -->
+      <hr>
+      <div class="media-coverage">
+        <h3>Media Coverage</h3>
+        
+        <div class="media-coverage-content">
+          <li> <a href=https://venturebeat.com/ai/meta-quietly-releases-llama-2-long-ai-that-outperforms-gpt-3-5-and-claude-2-on-some-tasks/" target="_blank">"Meta quietly unveils Llama 2 Long AI that beats GPT-3.5 Turbo and Claude 2 on some tasks"</a> - VentureBeat</h5>
+          <li> <a href="https://www.techtimes.com/articles/297030/20230930/meta-llama-2-long-ai-model-stuns-next-level-responses.htm" target="_blank">"Meta's Llama 2 Long AI Model Stuns with Next-Level Responses, Outperforming Rivals"</a> - TechTimes</h5>
+  
+          <li> <a href="https://www.theverge.com/2023/8/24/23843487/meta-llama-code-generation-generative-ai-llm" target="_blank">"Meta launches own AI code-writing tool: Code Llama"</a> - The Verge</h5>
+  
+          <li> <a href="https://www.reuters.com/technology/meta-launch-ai-model-writing-computer-codes-2023-08-24/" target="_blank">"Meta to launch AI model for writing computer codes"</a> - REUTERS</h5>
+        </div>
+      </div>      
+
+
+
+
 
       <hr>
       <h3>Services</h3>

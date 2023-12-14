@@ -7,8 +7,9 @@ html {
   right: 80px
 }
 body {
-  font-family: Helvetica, Arial, Verdana, sans-serif;
-  font-size: 15px;
+  /* font-family: Menlo, Consolas, Helvetica; */
+  font-family: Menlo;
+  font-size: 13px;
 }
 
 
@@ -178,4 +179,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+.media-coverage {
+  /* Style as needed for your layout */
+}
+
+.media-coverage-content {
+  max-height: 100px; /* Adjust the height as needed */
+  overflow-y: auto; /* This will add a vertical scrollbar if the content overflows */
+  margin: 0; /* Adjust margin as needed */
+  padding: 0; /* Adjust padding as needed */
 }
